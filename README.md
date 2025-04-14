@@ -6,7 +6,7 @@ sudo apt install -y iodine
 ```
 ### Server
 ```console
-sudo apt install -y iodine iptables sysctl
+sudo apt install -y iodine iptables procps
 ```
 ### Access Point
 ```console
