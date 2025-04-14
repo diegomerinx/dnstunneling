@@ -84,14 +84,6 @@ if ! command -v nmcli &> /dev/null; then
     exit 1
 fi
 
-# Instalación de paquetes necesarios
-log_msg info "Instalando paquetes necesarios..."
-apt update -qq && apt install -y hostapd dnsmasq apache2 php php-cgi iptables openssl > /dev/null 2>&1 || {
-    log_msg error "Error durante la instalación de paquetes."
-    exit 1
-}
-log_msg success "Paquetes instalados correctamente."
-
 # Configuración de hostapd
 log_msg info "Generando configuración de hostapd..."
 cat <<EOF > hostapd.conf
