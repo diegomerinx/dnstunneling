@@ -16,12 +16,12 @@ sudo apt install -y hostapd dnsmasq apache2 php php-cgi iptables openssl
 ### Client
 ```console
 cd Client
-./client.sh
+./client.sh [domain] (tun.iodinedeustotunnel.work.gd)
 ```
 ### Server
 ```console
 cd Server
-./server.sh
+./server.sh [domain] (tun.iodinedeustotunnel.work.gd)
 ```
 ### Access Point
 ```console
